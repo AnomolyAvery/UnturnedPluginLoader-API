@@ -18,6 +18,7 @@ const getAll = async (_: Request, res: Response) => {
 
         res.status(200).json(plugins);
     } catch (err) {
+        console.log(err);
         res.status(500).json({
             message: 'Something went wrong',
         });
@@ -61,6 +62,7 @@ const getById = async (req: Request, res: Response) => {
 
         res.status(200).json(plugin);
     } catch (err) {
+        console.log(err);
         res.status(500).json({
             message: 'Something went wrong',
         });
@@ -160,6 +162,7 @@ const stream = async (req: Request, res: Response) => {
             base64: fileContent,
         });
     } catch (err) {
+        console.log(err);
         res.status(500).json({
             message: 'Something went wrong',
         });
