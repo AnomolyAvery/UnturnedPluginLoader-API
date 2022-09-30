@@ -17,6 +17,16 @@ PORT=4000
 DATABASE_URL=mysql://user:pwd@localhost:3306/unturnedpluginloader
 ```
 
+Install the project dependecies
+
+```
+yarn
+
+# or
+
+npm install
+```
+
 Push the current schema to the database
 
 ```
